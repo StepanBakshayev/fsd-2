@@ -2,8 +2,9 @@
 
 .color-pick {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
 }
 
 .dark-shade-100 {
@@ -11,19 +12,19 @@
 }
 
 .dark-shade-75 {
-    background-color: change-color($dark-shade, $alpha: 0.75);
+    background-color: $dark-shade-75;
 }
 
 .dark-shade-50 {
-    background-color: change-color($dark-shade, $alpha: 0.5);
+    background-color: $dark-shade-50;
 }
 
 .dark-shade-25 {
-    background-color: change-color($dark-shade, $alpha: 0.25);
+    background-color: $dark-shade-25;
 }
 
 .dark-shade-5 {
-    background-color: change-color($dark-shade, $alpha: 0.05);
+    background-color: $dark-shade-5;
 }
 
 .purple {
