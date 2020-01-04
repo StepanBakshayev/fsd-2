@@ -1,0 +1,6 @@
+[submodule "assets/Quicksand-source"]
+	path = Quicksand-source
+	url = https://github.com/andrew-paglinawan/QuicksandFamily.git
+[submodule "Montserrat-source"]
+	path = Montserrat-source
+	url = https://github.com/JulietaUla/Montserrat.git
