@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const path = require('path')
 const fs = require('fs')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 
 const PAGES_DIR = path.join(__dirname, 'pages')
@@ -10,6 +11,9 @@ const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.p
 
 
 config = {
+    externals: {
+        paths: {assets: 'assets/'}
+    },
     entry: {
         'markup/ui-kit': path.resolve(__dirname, './markup/ui-kit.scss'),
         ...Object.fromEntries(PAGES.map(page => [page.split('.')[0], `${PAGES_DIR}/${page}`]))
@@ -19,6 +23,9 @@ config = {
         new MiniCssExtractPlugin({
           filename: 'css/[name].[hash].css',
         }),
+        new CopyWebpackPlugin([
+          { from: path.join(__dirname, 'assets'), to: 'assets' },
+        ]),
         ...PAGES.map(page => new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/${page}`,
               filename: `./${page.replace(/\.pug/,'.html')}`
