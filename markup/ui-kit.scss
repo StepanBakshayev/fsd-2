@@ -76,15 +76,16 @@
     background-color: $green;
 }
 
-
-.type {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
+.types {
+    display: inline-grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 20px;
+    row-gap: 50px;
+    grid-auto-flow: row;
 }
 
-.text {
-    margin-left: 20px;
+.types > .tag {
+    text-align: right;
 }
 
 .h1 {
