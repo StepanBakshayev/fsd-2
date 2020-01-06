@@ -19,7 +19,8 @@ config = {
         ...Object.fromEntries(PAGES.map(page => [page.split('.')[0], `${PAGES_DIR}/${page}`]))
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
+        // This thing is eat firefox memory.
+        // new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
           filename: 'css/[name].[hash].css',
         }),

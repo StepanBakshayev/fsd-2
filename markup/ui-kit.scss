@@ -18,6 +18,7 @@
     font-family: 'quicksandlight', sans-serif;
     color: $dark-shade;
     line-height: 1.5;
+    font-weight: 500;
 }
 
 .color-item {
@@ -95,7 +96,7 @@
     width: 186px;
 }
 
-.text.body {
+.text.-body {
     width: 301px;
 }
 
@@ -123,8 +124,40 @@
     text-transform: uppercase;
 }
 
-body {
+.body {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 14px;
+    width: 1440px;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
 }
+
+* {
+    background-color: transparent;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-image: url('/assets/logo.svg');
+    background-repeat: no-repeat;
+    font-size: 0px;
+    width: 48px;
+    height: 48px;
+}
+
+.color-types {
+    padding-top: 145px;
+    padding-left: 150px;
+    margin: 0;
+}
+
+.wafer {
+    background-image: url('/assets/wafer/Colors & Type.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
