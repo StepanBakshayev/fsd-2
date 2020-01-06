@@ -15,10 +15,8 @@
 }
 
 .colors {
-    font-family: 'quicksandlight', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: $dark-shade;
-    line-height: 1.5;
-    font-weight: 500;
 }
 
 .color-item {
@@ -42,11 +40,14 @@
 
 .color-name {
     font-weight: bold;
+    line-height: 31px; // PP: Figure out manually equivalent 150%;
     font-size: 19px;
 }
 
 .color-code {
+    font-weight: normal;
     font-size: 19px;
+    line-height: 27px; // PP: Figure out manually equivalent 150%;
 }
 
 .dark-shade-100 {
@@ -80,7 +81,7 @@
 .types {
     display: inline-grid;
     grid-template-columns: 1fr auto;
-    column-gap: 20px;
+    column-gap: 30px;
     row-gap: 50px;
 }
 
@@ -103,25 +104,45 @@
 .types > .tag {
     text-align: right;
     color: $dark-shade-25;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.h1 {
-    font-family: 'quicksandlight', sans-serif;
-    font-weight: bold;
+.tag.h1 {
     font-size: 24px;
 }
 
-.h2 {
-    font-family: 'quicksandlight', sans-serif;
+.text.h1 {
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 24px;
+    line-height: 32px; // PP: Figure out manually equivalent auto;
 }
 
-.h3 {
+.tag.h2 {
+    font-size: 19px;
+    line-height: 15px; // PP: Figure out manually equivalent auto;
+}
+
+.text.h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 22px; // PP: Figure out manually equivalent auto;
+}
+
+.tag.h3 {
+    font-size: 12px;
+}
+
+.text.h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 12;
+    font-size: 12px;
     text-transform: uppercase;
+}
+
+.text.-body{
+    line-height: 22px;
 }
 
 .body {
@@ -154,10 +175,3 @@
     padding-left: 150px;
     margin: 0;
 }
-
-.wafer {
-    background-image: url('/assets/wafer/Colors & Type.png');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
-

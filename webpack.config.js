@@ -11,6 +11,7 @@ const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.p
 
 
 config = {
+    mode: 'development',
     externals: {
         paths: {assets: 'assets/'}
     },
