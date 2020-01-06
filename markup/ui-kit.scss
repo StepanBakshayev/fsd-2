@@ -1,8 +1,8 @@
 @import 'base';
 
-* {
-    border: grey dashed 1px;
-}
+// * {
+//     border: grey dashed 1px;
+// }
 
 
 .color-types {
@@ -81,11 +81,27 @@
     grid-template-columns: 1fr auto;
     column-gap: 20px;
     row-gap: 50px;
-    grid-auto-flow: row;
+}
+
+.text.h1 {
+    width: 336px;
+}
+
+.text.h2 {
+    width: 282px;
+}
+
+.text.h3 {
+    width: 186px;
+}
+
+.text.body {
+    width: 301px;
 }
 
 .types > .tag {
     text-align: right;
+    color: $dark-shade-25;
 }
 
 .h1 {
