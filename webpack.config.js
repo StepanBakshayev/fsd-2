@@ -17,6 +17,7 @@ config = {
     },
     entry: {
         'markup/ui-kit': path.resolve(__dirname, './markup/ui-kit.scss'),
+        'markup/style': path.resolve(__dirname, './markup/style.css'),
         ...Object.fromEntries(PAGES.map(page => [page.split('.')[0], `${PAGES_DIR}/${page}`]))
     },
     plugins: [
@@ -48,6 +49,16 @@ config = {
                   options: { sourceMap: true }
                 },{
                   loader: 'sass-loader',
+                  options: { sourceMap: true }
+                }
+              ]
+            }, {
+              test: /\.css$/,
+              use: [
+                'style-loader',
+                MiniCssExtractPlugin.loader,
+                {
+                  loader: 'css-loader',
                   options: { sourceMap: true }
                 }
               ]
