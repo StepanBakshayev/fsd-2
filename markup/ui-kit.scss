@@ -183,8 +183,13 @@
 }
 
 .form-section {
+    display: inline-block;
     width: 320px;
     margin-right: 126px;
+}
+
+.form-section:last-child {
+    margin-right: 0;
 }
 
 .form-group {

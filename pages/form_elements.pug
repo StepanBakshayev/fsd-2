@@ -63,3 +63,74 @@ html
               div.form-subscription-input
                 label subscription text field
                 input(type='text', placeholder='Email')
+
+        div.form-section
+          div.form-group
+            div.form-item
+              div.form-checkbox
+                label Checkbox Buttons
+                label #[input(type='checkbox')] Можно курить
+                label #[input(type='checkbox', checked='true')] Можно с питомцами
+                label #[input(type='checkbox', checked='true')] Можно пригласить гостей (до 10 человек)
+
+          div.form-group
+            div.form-item
+              div.form-radio
+                label Radio Buttons
+                label #[input(type='radio', checked='true', name='sex')] Мужчина
+                label #[input(type='radio', name='sex')] Женщина
+
+          div.form-group
+            div.form-item
+              div.form-toggle
+                label Toggle
+                label #[input(type='checkbox', checked='true')] Получать спецпредложения
+                label #[input(type='checkbox')] Получать спецпредложения
+
+
+          div.form-group
+            div.form-item
+              div.form-like
+                label like button
+                label #[input(type='checkbox')] 2
+                label #[input(type='checkbox', checked='true')] 12
+
+          div.form-group
+            div.form-item
+              div.form-rate
+                label rate button
+                p 4#{'/'}5
+                p 5#{'/'}5
+
+        div.form-section
+          div.form-group
+            div.form-item
+              div.form-range-slider
+                label Range Slider
+                div.value 5 000₽ - 10 000₽
+                div.slider
+
+          div.form-group
+            div.form-item
+              div.form-buttons
+                label buttons
+                button CLICK ME
+                button CLICK ME
+                button CLICK ME
+                button CLICK ME
+                a(href='#') CLICK ME
+                a(href='#') CLICK ME
+                button.long перейти к оплате
+
+          div.form-group
+            div.form-item
+              div.form-pagination
+                label pagination
+                ul.pages
+                  li.current 1
+                  li 2
+                  li 3
+                  li ...
+                  li 15
+                  li.next next
+                div.annotation 1 – 12 из 100+ вариантов аренды
