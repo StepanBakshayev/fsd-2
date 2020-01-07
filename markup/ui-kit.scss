@@ -153,6 +153,7 @@
     margin: auto;
     background-color: #fff;
     position: relative;
+    color: $dark-shade;
 }
 
 * {
@@ -174,5 +175,65 @@
     padding-top: 145px;
     padding-left: 150px;
     margin: 0;
+}
+
+.form-elements {
+    padding-left: 141px;
+    padding-top: 140px;
+}
+
+.form-section {
+    width: 320px;
+    margin-right: 126px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+.form-text-field > label, .form-dropdown > label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.form-text-field .input-marker, .form-dropdown .input-marker {
+    float: right;
+    font-weight: normal;
+    color: $dark-shade-25;
+}
+
+.form-text-field input, .form-dropdown select {
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $dark-shade-25;
+    border-radius: 4px;
+    height: 44px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark-shade-75;
+}
+
+.form-text-field input::placeholder {
+    font-size: 14px;
+    line-height: 36px;
+    color: $dark-shade-25;
+}
+
+.form-text-field.hover-focus input {
+    border-color: $dark-shade-50;
+}
+
+.form-text-field.hover-focus .input-marker {
+    color: $dark-shade-50;
 }
 
