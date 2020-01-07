@@ -237,3 +237,18 @@
     color: $dark-shade-50;
 }
 
+.form-dropdown select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 22px;
+    background-color: #fff;
+    background-position-x: right 22px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url("/assets/expand_more.svg");
+    background-size: 13px 8px;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
