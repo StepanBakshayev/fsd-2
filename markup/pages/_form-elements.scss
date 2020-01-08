@@ -1,15 +1,42 @@
-@use '../base' as *;
+@use '../variables' as *;
+
+$section-margin: 126px;
 
 .form-elements {
     padding-left: 141px;
     padding-top: 140px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+// Bootstrap do thing like this. I don't know why.
+// SO answer do invert https://stackoverflow.com/a/20653092.
+.form-elements {
+    margin-left: $section-margin/2 * -1;
+    margin-right: $section-margin/2 * -1;
 }
 
 .form-section {
-    display: inline-block;
-    width: 320px;
-    margin-right: 126px;
-    vertical-align: top;
+    padding-left: $section-margin/2;
+    padding-right: $section-margin/2;
+}
+
+// Chrome declarate support, but does not have
+// @supports (display: flex) and (column-gap: 1px) {
+//     .form-elements {
+//         column-gap: $section-margin;
+//         margin: 0;
+//     }
+//     .form-section {
+//         padding: 0;
+//     }
+// }
+
+.form-section {
+    flex-basis: 320px + $section-margin;
+    // width: 320px;
+    width: 100%;
 }
 
 .form-section:last-child {

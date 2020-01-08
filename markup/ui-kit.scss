@@ -3,8 +3,7 @@
 @use 'pages/ui-kit';
 @use 'pages/colors-type';
 @use 'pages/index';
-
-// @use 'pages/form-elements' as *;
+@use 'pages/form-elements';
 
 // This makes constan environment over different browser's userstylesheets.
 @import '~bootstrap/scss/bootstrap-reboot';
