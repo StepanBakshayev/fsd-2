@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+h1, .h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: $font-size-h1;
+    line-height: 32px; // PP: Figure out manually equivalent auto;
+    color: $dark-shade;
+}
+
+h1, .h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: $font-size-h2;
+    line-height: 22px; // PP: Figure out manually equivalent auto;
+    color: $dark-shade;
+}
+
+h3, .h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $dark-shade;
+    line-height: 17px;
+}

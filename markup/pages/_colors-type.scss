@@ -1,0 +1,117 @@
+@use '../variables' as *;
+
+.color-types {
+    display: flex;
+    flex-direction: row;
+    width: 1249px;
+    justify-content: space-between;
+    padding-top: 145px;
+    padding-left: 150px;
+}
+
+.colors {
+    font-family: 'Quicksand', sans-serif;
+    color: $dark-shade;
+}
+
+.color-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.color-pick {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+}
+
+.color-title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    justify-content: center;
+}
+
+.color-name {
+    font-weight: bold;
+    line-height: 31px; // PP: Figure out manually equivalent 150%;
+    font-size: 19px;
+}
+
+.color-code {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 27px; // PP: Figure out manually equivalent 150%;
+}
+
+.dark-shade-100 {
+    background-color: $dark-shade;
+}
+
+.dark-shade-75 {
+    background-color: $dark-shade-75;
+}
+
+.dark-shade-50 {
+    background-color: $dark-shade-50;
+}
+
+.dark-shade-25 {
+    background-color: $dark-shade-25;
+}
+
+.dark-shade-5 {
+    background-color: $dark-shade-5;
+}
+
+.purple {
+    background-color: $brand-purple;
+}
+
+.green {
+    background-color: $brand-green;
+}
+
+.types {
+    display: inline-grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+.text.h1 {
+    width: 336px;
+}
+
+.text.h2 {
+    width: 282px;
+}
+
+.text.h3 {
+    width: 186px;
+}
+
+.text.body {
+    width: 301px;
+}
+
+.types > .tag {
+    text-align: right;
+    color: $dark-shade-25;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tag.-h1 {
+    font-size: $font-size-h1;
+}
+
+.tag.-h2 {
+    font-size: $font-size-h2;
+    line-height: 15px; // PP: Figure out manually equivalent auto;
+}
+
+.tag.-h3 {
+    font-size: $font-size-h3;
+}
+

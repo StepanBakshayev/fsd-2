@@ -1,58 +1,51 @@
-doctype html
-html
-  head
-    link(href='./assets/quicksand/stylesheet.css', rel='stylesheet')
-    link(href='./assets/montserrat/Montserrat.css', rel='stylesheet')
-    link(href='../markup/ui-kit.css', rel='stylesheet')
+extends ui-kit.pug
 
-  body.body
-    div
-      a.logo(href='/') Home
-      div.color-types
-        div.colors
-          div.color-item
-            span.color-pick.dark-shade-100
-            div.color-title
-              div.color-name Dark Shade 100%
-              div.color-code #1F2041
-          div.color-item
-            span.color-pick.dark-shade-75
-            div.color-title
-              div.color-name Dark Shade 75%
-              div.color-code #1F2041
-          div.color-item
-            span.color-pick.dark-shade-50
-            div.color-title
-              div.color-name Dark Shade 50%
-              div.color-code #1F2041
-          div.color-item
-            span.color-pick.dark-shade-25
-            div.color-title
-              div.color-name Dark Shade 25%
-              div.color-code #1F2041
-          div.color-item
-            span.color-pick.dark-shade-5
-            div.color-title
-              div.color-name Dark Shade 5%
-              div.color-code #1F2041
-          div.color-item
-            span.color-pick.purple
-            div.color-title
-              div.color-name Purple
-              div.color-code #BC9CFF
-          div.color-item
-            span.color-pick.green
-            div.color-title
-              div.color-name Green
-              div.color-code #6FCF97
+block content
+    div.color-types
+      div.colors
+        div.color-item
+          span.color-pick.dark-shade-100
+          div.color-title
+            div.color-name Dark Shade 100%
+            div.color-code #1F2041
+        div.color-item
+          span.color-pick.dark-shade-75
+          div.color-title
+            div.color-name Dark Shade 75%
+            div.color-code #1F2041
+        div.color-item
+          span.color-pick.dark-shade-50
+          div.color-title
+            div.color-name Dark Shade 50%
+            div.color-code #1F2041
+        div.color-item
+          span.color-pick.dark-shade-25
+          div.color-title
+            div.color-name Dark Shade 25%
+            div.color-code #1F2041
+        div.color-item
+          span.color-pick.dark-shade-5
+          div.color-title
+            div.color-name Dark Shade 5%
+            div.color-code #1F2041
+        div.color-item
+          span.color-pick.purple
+          div.color-title
+            div.color-name Purple
+            div.color-code #BC9CFF
+        div.color-item
+          span.color-pick.green
+          div.color-title
+            div.color-name Green
+            div.color-code #6FCF97
 
-        div
-          div.types
-            div.tag.h1 H1
-            div.text.h1 This one is the sub-section or widget title
-            div.tag.h2 H2
-            div.text.h2 Next one is the item title inside widgets
-            div.tag.h3 H3
-            div.text.h3 This is a label or CTA text
-            div.tag.-body Body
-            div.text.-body This is the body text which is used for most of the design, like paragraphs, lists, etc.
+      div
+        div.types
+          div.tag.-h1 H1
+          div.text.h1 This one is the sub-section or widget title
+          div.tag.-h2 H2
+          div.text.h2 Next one is the item title inside widgets
+          div.tag.-h3 H3
+          div.text.h3 This is a label or CTA text
+          div.tag.-body Body
+          div.text.body This is the body text which is used for most of the design, like paragraphs, lists, etc.

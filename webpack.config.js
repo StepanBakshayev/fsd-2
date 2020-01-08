@@ -17,7 +17,7 @@ config = {
     },
     entry: {
         'markup/ui-kit': path.resolve(__dirname, './markup/ui-kit.scss'),
-        'markup/style': path.resolve(__dirname, './markup/style.css'),
+        'markup/style': path.resolve(__dirname, './markup/style.scss'),
         ...Object.fromEntries(PAGES.map(page => [page.split('.')[0], `${PAGES_DIR}/${page}`]))
     },
     plugins: [
@@ -31,7 +31,7 @@ config = {
         ]),
         ...PAGES.map(page => new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/${page}`,
-              filename: `./${page.replace(/\.pug/,'.html')}`
+            filename: `./${page.replace(/\.pug/,'.html')}`
         }))
     ],
     module: {
@@ -49,16 +49,6 @@ config = {
                   options: { sourceMap: true }
                 },{
                   loader: 'sass-loader',
-                  options: { sourceMap: true }
-                }
-              ]
-            }, {
-              test: /\.css$/,
-              use: [
-                'style-loader',
-                MiniCssExtractPlugin.loader,
-                {
-                  loader: 'css-loader',
                   options: { sourceMap: true }
                 }
               ]
