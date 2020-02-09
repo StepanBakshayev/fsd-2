@@ -1,15 +1,3 @@
-@use 'variables' as *;
-@use 'type';
-@use 'pages/ui-kit';
-@use 'pages/colors-type';
-@use 'pages/index';
-@use 'pages/form-elements';
-
-// This makes constan environment over different browser's userstylesheets.
-@import '~bootstrap/scss/bootstrap-reboot';
-
-// XXX: Bootstrap does not accept values in px. Override by bootstrap.
-body {
-    font-size: $font-size-body;
-    line-height: $line-height;
-}
+@use 'blocks/ui-kit.scss';
+@use 'blocks/colors-type.scss';
+@use 'blocks/color-presenter.scss';

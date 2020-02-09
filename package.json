@@ -10,7 +10,6 @@
     "serve": "webpack-dev-server"
   },
   "devDependencies": {
-    "bootstrap": "^4.4.1",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.0",
     "fibers": "^4.0.2",
@@ -24,5 +23,8 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
   }
 }

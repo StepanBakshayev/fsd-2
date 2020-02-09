@@ -1,0 +1,66 @@
+@use '../variables.scss' as *;
+
+.color-presenter {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    &__sample {
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        background-color: black; // some default value
+
+        &_dark-shade-100 {
+            background-color: $dark-shade;
+        }
+
+        &_dark-shade-75 {
+            background-color: $dark-shade-75;
+        }
+
+        &_dark-shade-50 {
+            background-color: $dark-shade-50;
+        }
+
+        &_dark-shade-25 {
+            background-color: $dark-shade-25;
+        }
+
+        &_dark-shade-5 {
+            background-color: $dark-shade-5;
+        }
+
+        &_purple {
+            background-color: $brand-purple;
+        }
+
+        &_green {
+            background-color: $brand-green;
+        }
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        justify-content: center;
+    }
+
+    &__title {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        line-height: 31px; // PP: Figure out manually equivalent 150%;
+        font-size: 19px;
+    }
+
+    &__code {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 27px; // PP: Figure out manually equivalent 150%;
+    }
+}
+
