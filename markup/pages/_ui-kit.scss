@@ -1,6 +1,0 @@
-// I tried to use @use. variables requires theme-color, but functions requires $escaped-characters.
-// Hello, cyclic imports.
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-
-

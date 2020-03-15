@@ -2,9 +2,15 @@
 @use 'blocks/colors-type.scss';
 @use 'blocks/color-presenter.scss';
 @use 'blocks/type-presenter.scss';
+@use 'variables' as *;
 
 
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-size: $font-size-body;
+    line-height: $line-height;
 }
