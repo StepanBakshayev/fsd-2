@@ -1,0 +1,19 @@
+@use '../variables' as *;
+
+.form-field {
+    &__label {
+
+    }
+
+    &__marker {
+        float: right;
+        font-weight: normal;
+        color: $dark-shade-25;
+        text-transform: uppercase;
+    }
+
+    &__field {
+        clear: both;
+        margin-top: 5px;
+    }
+}

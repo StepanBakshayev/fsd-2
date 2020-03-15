@@ -6,30 +6,30 @@ block content
       div.form-section
         div.form-group
           div.form-item
-            div.form-text-field
-              label
+            div.form-field
+              label.label
                 | Text Field
-                span.input-marker Default
-                input(type='text', placeholder='Email')
+              span.form-field__marker Default
+              input.form-field__field.text-field(type='text', placeholder='Email')
           div.form-item
             div.form-text-field.hover-focus
-              label
+              label.label
                 | Text Field
-                span.input-marker Hover / Focus
-              input(type='text', value='This is pretty awesome')
+              span.form-field__marker Hover / Focus
+              input.form-field__field.text-field.text-field_hover(type='text', value='This is pretty awesome')
           div.form-item
             div.form-dropdown
-              label
+              label.label
                 | Dropdown
-                span.input-marker Defualt
-              select
+              span.form-field__marker Defualt
+              select.drop-down
                 option(selected='true') Сколько гостей
           div.form-item
             div.form-text-field
-              label
+              label.label
                 | masked text field
-                span.input-marker Defult
-              input(type='text', placeholder='ДД.ММ.ГГГГ')
+              span.form-field__marker Default
+              input.form-field__field.text-field(type='text', placeholder='ДД.ММ.ГГГГ')
 
         div.form-group
           div.form-item
@@ -37,56 +37,56 @@ block content
               div.form-item-horizontal
                 div.from-date-dropdown
                   label date Dropdown
-                  select
+                  select.drop-down
                     option(selected='true') ДД.ММ.ГГГГ
                 div.from-date-dropdown
                   label date Dropdown
-                  select
+                  select.drop-down
                     option(selected='true') 19.08.2019
 
         div.form-group
           div.form-item
             div.form-date-filter-dropdown
               label filter date dropdown
-              select
+              select.drop-down
                 option(selected='true') 19 авг - 23 авг
 
         div.form-group
           div.form-item
             div.form-subscription-input
               label subscription text field
-              input(type='text', placeholder='Email')
+              input.form-field__field.text-field.text-field_subscription(type='text', placeholder='Email')
 
       div.form-section
         div.form-group
           div.form-item
             div.form-checkbox
               label Checkbox Buttons
-              label #[input(type='checkbox')] Можно курить
-              label #[input(type='checkbox', checked='true')] Можно с питомцами
-              label #[input(type='checkbox', checked='true')] Можно пригласить гостей (до 10 человек)
+              label #[input.form-field__field.text-field(type='checkbox')] Можно курить
+              label #[input.form-field__field.text-field(type='checkbox', checked='true')] Можно с питомцами
+              label #[input.form-field__field.text-field(type='checkbox', checked='true')] Можно пригласить гостей (до 10 человек)
 
         div.form-group
           div.form-item
             div.form-radio
               label Radio Buttons
-              label #[input(type='radio', checked='true', name='sex')] Мужчина
-              label #[input(type='radio', name='sex')] Женщина
+              label #[input.form-field__field.text-field(type='radio', checked='true', name='sex')] Мужчина
+              label #[input.form-field__field.text-field(type='radio', name='sex')] Женщина
 
         div.form-group
           div.form-item
             div.form-toggle
               label Toggle
-              label #[input(type='checkbox', checked='true')] Получать спецпредложения
-              label #[input(type='checkbox')] Получать спецпредложения
+              label #[input.form-field__field.text-field(type='checkbox', checked='true')] Получать спецпредложения
+              label #[input.form-field__field.text-field(type='checkbox')] Получать спецпредложения
 
 
         div.form-group
           div.form-item
             div.form-like
               label like button
-              label #[input(type='checkbox')] 2
-              label #[input(type='checkbox', checked='true')] 12
+              label #[input.form-field__field.text-field(type='checkbox')] 2
+              label #[input.form-field__field.text-field(type='checkbox', checked='true')] 12
 
         div.form-group
           div.form-item

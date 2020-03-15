@@ -1,0 +1,39 @@
+@use '../variables' as *;
+
+.text-field {
+    width: 100%;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $dark-shade-25;
+    border-radius: 4px;
+    height: 44px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark-shade-75;
+
+    &::placeholder {
+        font-size: 14px;
+        line-height: 36px;
+        color: $dark-shade-25;
+    }
+
+    &_hover {
+        color: $dark-shade-50;
+        border-color: $dark-shade-50;
+    }
+
+    &_subscription {
+        padding-left: 22px;
+        background-color: #fff;
+        background-position-x: right 22px;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-image: url("/assets/arrow_forward.svg");
+        background-size: 18px 18px;
+        background-origin: padding-box;
+        background-clip: border-box;
+    }
+}

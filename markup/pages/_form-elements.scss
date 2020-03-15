@@ -52,74 +52,35 @@ $section-margin: 126px;
 }
 
 .form-text-field > label, .form-dropdown > label, .from-date-dropdown > label, .form-date-filter-dropdown > label, .form-subscription-input > label {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
+
 }
 
 .form-text-field .input-marker, .form-dropdown .input-marker {
-    float: right;
-    font-weight: normal;
-    color: $dark-shade-25;
+
 }
 
 .form-text-field input, .form-dropdown select, .from-date-dropdown select, .form-date-filter-dropdown select, .form-subscription-input input {
-    clear: both;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: $dark-shade-25;
-    border-radius: 4px;
-    height: 44px;
-    padding-left: 15px;
-    font-size: 14px;
-    line-height: 24px;
-    color: $dark-shade-75;
+
 }
 
 .form-text-field input::placeholder, .form-subscription-input input::placeholder {
-    font-size: 14px;
-    line-height: 36px;
-    color: $dark-shade-25;
+
 }
 
 .form-text-field.hover-focus input {
-    border-color: $dark-shade-50;
+    
 }
 
 .form-text-field.hover-focus .input-marker {
-    color: $dark-shade-50;
+    
 }
 
 .form-dropdown select, .from-date-dropdown select, .form-date-filter-dropdown select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding-left: 22px;
-    background-color: #fff;
-    background-position-x: right 22px;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-image: url("/assets/expand_more.svg");
-    background-size: 13px 8px;
-    background-origin: padding-box;
-    background-clip: border-box;
+
 }
 
 .form-subscription-input input {
-    padding-left: 22px;
-    background-color: #fff;
-    background-position-x: right 22px;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-image: url("/assets/arrow_forward.svg");
-    background-size: 18px 18px;
-    background-origin: padding-box;
-    background-clip: border-box;
+
 }
 
 .form-item-horizontal {
