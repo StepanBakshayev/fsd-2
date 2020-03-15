@@ -62,9 +62,18 @@ block content
           div.form-item
             div.form-field
               label.form-field__label Checkbox Buttons
-              label #[input.form-field__field.text-field(type='checkbox')] Можно курить
-              label #[input.form-field__field.text-field(type='checkbox', checked='true')] Можно с питомцами
-              label #[input.form-field__field.text-field(type='checkbox', checked='true')] Можно пригласить гостей (до 10 человек)
+              div.checkbox
+                input.checkbox__field(type='checkbox')
+                label.checkbox__label
+                  | Можно курить
+              div.checkbox
+                input.checkbox__field(type='checkbox', checked='true')
+                label.checkbox__label
+                  | Можно с питомцами
+              div.checkbox
+                input.checkbox__field(type='checkbox', checked='true')
+                label.checkbox__label
+                  | Можно пригласить гостей (до 10 человек)
 
         div.form-group
           div.form-item
