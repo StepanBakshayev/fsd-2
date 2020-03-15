@@ -2,3 +2,9 @@
 @use 'blocks/colors-type.scss';
 @use 'blocks/color-presenter.scss';
 @use 'blocks/type-presenter.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}

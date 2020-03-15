@@ -1,0 +1,47 @@
+@use '../variables.scss' as *;
+
+.type-presenter {
+    display: inline-grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 30px;
+    row-gap: 50px;
+
+    &__tag {
+        text-align: right;
+        color: $dark-shade-25;
+        font-family: 'Montserrat', sans-serif;
+        &_h1 {
+            font-size: $font-size-h1;
+        }
+
+        &_h2 {
+            font-size: $font-size-h2;
+            line-height: 15px; // PP: Figure out manually equivalent auto;
+        }
+
+        &_h3 {
+            font-size: $font-size-h3;
+        }
+    }
+
+    &__text {
+        &_h1 {
+            width: 336px;
+        }
+
+        &_h2 {
+            width: 282px;
+            font-size: $font-size-h2;
+            line-height: 15px; // PP: Figure out manually equivalent auto;
+        }
+
+        &_h3 {
+            width: 186px;
+            font-size: $font-size-h3;
+        }
+
+        &_body {
+            width: 301px;
+        }
+    }
+}
